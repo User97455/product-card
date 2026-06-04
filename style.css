@@ -1,0 +1,41 @@
+body {
+    font-family:Arial,sans-serif;
+    font-size: 13 px;
+    line-height: 18 px;
+}
+
+.title {
+    font-size: 70 px;
+    font-weight: 400;
+    line-height: 78 px;
+    text-align: center;
+    color: #515076;
+}
+
+.description {
+    color: #515076;
+}
+
+.under-name {
+    font:Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #A5A3B9;
+}
+
+.h2-name {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0%;
+    color: #515076;
+
+}
+
+.bcard {
+    background-color: #F7F7FA;
+}
