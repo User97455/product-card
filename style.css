@@ -1,23 +1,19 @@
 body {
     font-family:Arial,sans-serif;
-    font-size: 13 px;
-    line-height: 18 px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #515076;
 }
 
 .title {
-    font-size: 70 px;
+    font-size: 70px;
     font-weight: 400;
-    line-height: 78 px;
+    line-height: 78px;
     text-align: center;
     color: #515076;
 }
 
-.description {
-    color: #515076;
-}
-
 .under-name {
-    font:Montserrat;
     font-size: 12px;
     font-weight: 400;
     line-height: 24px;
@@ -25,10 +21,9 @@ body {
     color: #A5A3B9;
 }
 
-.h2-name {
+.product-name {
     font-family: Montserrat;
     font-weight: 700;
-    font-style: Bold;
     font-size: 20px;
     line-height: 27px;
     letter-spacing: 0%;
@@ -38,4 +33,23 @@ body {
 
 .bcard {
     background-color: #F7F7FA;
+    padding: 25px;
+    margin: 73px;
+}
+
+.price-style{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    font-style: 700;
+   
+}
+
+.number-style{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    font-style: 700;
+    margin: 15px;
+    padding: 15px;
 }
