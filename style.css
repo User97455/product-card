@@ -52,3 +52,7 @@ body {
     margin: 15px;
     padding: 15px;
 }
+
+ul {
+    list-style-type: none;
+}
