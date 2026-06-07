@@ -22,7 +22,6 @@ body {
 }
 
 .product-name {
-    font-family: Montserrat;
     font-weight: 700;
     font-size: 20px;
     line-height: 27px;
@@ -37,7 +36,7 @@ body {
     margin: 73px;
 }
 
-.price-style{
+.price{
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -45,7 +44,7 @@ body {
    
 }
 
-.number-style{
+.number{
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
