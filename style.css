@@ -41,19 +41,17 @@ ul {
     
 }
 
-.price{
+.price {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    font-style: Bold;
    
 }
 
-.number{
+.number {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    font-style: Regular;
     margin: 15px;
     padding: 15px;
 }
