@@ -1,0 +1,72 @@
+body {
+    font-family:Arial,sans-serif;
+    background-image: url(../images/back.png);
+    background-repeat: no-repeat;
+    font-size: 13px;
+    line-height: 18px;
+    color: #515076;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.products-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 10px;
+    justify-content: space-between;
+}
+
+
+.title {
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 78px;
+    text-align: center;
+}
+
+.under-name {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #A5A3B9;
+}
+
+.product-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0%;
+
+}
+
+.bcard {
+    background-color: #F7F7FA;
+    padding: 25px;
+    width: 340px;
+    height: 573px;
+
+}
+
+.price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+   
+}
+
+.number {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 15px;
+    padding: 15px;
+}
+
