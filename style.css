@@ -1,0 +1,58 @@
+body {
+    font-family:Arial,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #515076;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 78px;
+    text-align: center;
+}
+
+.under-name {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #A5A3B9;
+}
+
+.product-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0%;
+
+}
+
+.bcard {
+    background-color: #F7F7FA;
+    padding: 25px;
+    margin: 73px;
+    width: 340px;
+    height: 573px;
+    
+}
+
+.price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+   
+}
+
+.number {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 15px;
+    padding: 15px;
+}
+
