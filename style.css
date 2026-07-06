@@ -27,7 +27,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 45px;
-    justify-content: space-between;
+    justify-content: center;
     overflow: visible;
 }
 
