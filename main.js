@@ -65,3 +65,20 @@ function openYoutube() {
   }
 }
 
+//mouseover
+
+const mouseoverButton = document.getElementById('mouse-over');
+
+mouseoverButton.addEventListener('mouseover', function(){
+  alert('Вы навели мышку на заголовок')
+})
+
+
+//class list
+
+const moreColorButton = document.querySelector('#more-color-button')
+
+moreColorButton.addEventListener('click', () => {
+  moreColorButton.classList.toggle('more-color-button-deactive')
+  moreColorButton.classList.toggle('more-color-button-active')
+})
