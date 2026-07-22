@@ -6,10 +6,7 @@ const blueColorHash = '#0000FF';
 
 colorAllRechanger.addEventListener('click', () => {
   allCards.forEach((card) => card.style.backgroundColor = greenColorHash)
-})
-
-
-
+});
 
 //Покраска первой карточки 
 
@@ -18,8 +15,7 @@ const colorOneRechanger = document.querySelector('#color-one-rechanger');
 
 colorOneRechanger.addEventListener('click', () => {
   firstCard.style.backgroundColor = blueColorHash;
-})
-
+});
 
 //открыть google
 
@@ -35,7 +31,7 @@ function openGoogle() {
   } else {
     return;
   }
-}
+};
 
 // Вывод консоль лог 
 
@@ -46,8 +42,7 @@ consoleLogButton.addEventListener('click', () => outputConsoleLog('Вывод в
 function outputConsoleLog(message) {
   alert(message);
   console.log(message);
-}
-
+};
 
 //Открыть youtube 
 
@@ -63,15 +58,15 @@ function openYoutube() {
   } else {
     return;
   }
-}
+};
 
 //mouseover
 
 const mouseoverButton = document.getElementById('mouse-over');
 
-mouseoverButton.addEventListener('mouseover', function(){
-  alert('Вы навели мышку на заголовок')
-})
+mouseoverButton.addEventListener('mouseover', () => {
+  console.log(mouseoverButton.textContent.trim())
+});
 
 
 //class list
@@ -79,6 +74,5 @@ mouseoverButton.addEventListener('mouseover', function(){
 const moreColorButton = document.querySelector('#more-color-button')
 
 moreColorButton.addEventListener('click', () => {
-  moreColorButton.classList.toggle('more-color-button-deactive')
   moreColorButton.classList.toggle('more-color-button-active')
-})
+});
