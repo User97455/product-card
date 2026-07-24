@@ -1,0 +1,29 @@
+.buy-button {
+    background-color: #F7F7FA;
+    border: 1px solid #A5A3B9;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #A5A3B9;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.buy-button:hover {
+    background-color: #A5A3B9;
+    color: #FFFFFF;
+    border-color: #A5A3B9;
+}
+
+.buy-button__icon {
+    margin-right: 8px;
+}
+
+.buy-button__text {
+    font-weight: 700;
+    line-height: 24px;
+}
+

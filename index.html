@@ -4,6 +4,151 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  
+  <link rel ="stylesheet" href ="css/style.css">
+  <link rel ="stylesheet" href ="css/title.css">
+  <link rel ="stylesheet" href ="css/products-list.css">
+  <link rel ="stylesheet" href ="css/product-card.css">
+  <link rel ="stylesheet" href ="css/media.css">
+  <link rel ="stylesheet" href ="css/buy-button.css">
+  <link rel ="stylesheet" href ="css/actions.css">
+  <link rel ="stylesheet" href ="css/more-color-button.css">
+</head>
+
+<body>
+    <main>
+
+    <h1 class="title" id="mouse-over">Выбери свой продукт</h1>
+    <div class = 'actions'>
+        <button class = 'buy-button' id="color-all-rechanger">Изменить цвет всех карточек</button>
+        <button class = 'buy-button' id="color-one-rechanger">Изменить цвет первой карточки</button>
+        <button class = 'buy-button' id="open-google">Открыть страницу Google.com</button>
+        <button class = 'buy-button' id="output-console-log">Вывести сообщение в консоль log</button>
+        <button class = 'buy-button' id="open-youtube">Открыть страницу YouTube.com</button>
+        <button class = 'buy-button' id="more-color-button">Больше цветов</button>
+    </div>
+
+    <ul class="products-list" >
+        
+        <li class="product-card"">
+            <img src="images/photo-1.png" alt= "фото товара увлажняющего мусса" width="290"/>
+            <span class="product-card__under-name">для нормальной кожи</span>
+            <h2 class="product-card__product-name">Увлажняющий мусс</h2>
+            <p>Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</p>
+            <span>Состав: </span>
+            <ul>
+                <li>активные натуральные комплексы</li>
+                <li>витамины С, А, РР, В И Е</li>
+                <li>солнцезащитные компоненты</li>
+            </ul>
+            <div class="product-card__price-row">
+                <b class="product-card__price">Цена: </b>
+                <span class="product-card__number">2 750 ₽</span>
+            </div>
+            <button class="product-card__buy-button buy-button" type= "button">
+                <span class="buy-button__icon">+</span>
+                <span class="buy-button__text">Купить</span>
+            </button>
+        </li>
+
+
+        <li class ="product-card"">
+            <img src="images/photo-2x.png" alt= "фото увлажняющей маски" width="290"/>
+            <span class="product-card__under-name">для нормальной кожи</span>
+            <h2 class="product-card__product-name">Увлажняющая маска</h2>
+            <p>Способствует удерживанию влаги в верхних слоях кожи.</p>
+            <span>Состав: </span>
+            <ul>      
+                <li> воски</li>
+                <li>минералы</li>
+                <li>масла</li>
+            </ul>    
+            <div class="product-card__price-row">
+                <b class="product-card__price">Цена: </b>
+                <span class="product-card__number">3 500 ₽</span>
+            </div>
+            <button class="product-card__buy-button buy-button" type= "button">
+                <span class="buy-button__icon">+</span>
+                <span class="buy-button__text">Купить</span>
+            </button>
+        </li>
+
+        <li class ="product-card"">
+            <img src="images/photo-3.png" alt="фото геля для умывания" width="290"/>
+            <span class ="product-card__under-name">для нормальной кожи</span>
+            <h2 class ="product-card__product-name">Гель для умывания</h2>
+            <p>Интенсивно очищает, не повреждает защитный барьер кожи.</p>
+            <span>Состав: </span>
+            <ul>
+                <li>минералы</li>
+                <li>витамины С, А, РР, В И Е</li>
+                <li>солнцезащитные компоненты</li>
+            </ul>
+            <div class="product-card__price-row">
+                <b class="product-card__price">Цена</b>
+                <span class="product-card__number">1 650 ₽</span>
+            </div>
+            <button class="product-card__buy-button buy-button" type= "button">
+                <span class="buy-button__icon">+</span>
+                <span class="buy-button__text">Купить</span>
+            </button>
+        </li>
+
+        <li class ="product-card"">
+            <img src="images/photo-4.png" alt="фото подарочного набора №1" width="290"/>
+            <span class ="product-card__under-name">для нормальной кожи</span>
+            <h2 class ="product-card__product-name">Подарочный набор №1</h2>
+            <p>Набор, состоящий из увлажняющего крема и маски.</p>
+            <span>Состав: </span>
+            <ul>
+                <li>воски</li>
+                <li>минералы</li>
+                <li>масла</li>
+            </ul>
+            <div class="product-card__price-row">
+                <b class="product-card__price">Цена</b>
+                <span class="product-card__number">4 750 ₽</span>
+            </div>
+            <button class="product-card__buy-button buy-button" type= "button">
+                <span class="buy-button__icon">+</span>
+                <span class="buy-button__text">Купить</span>
+            </button>
+        </li>
+
+        <li class ="product-card""> 
+            <img src="images/photo-5.png" alt="фото подарочного набора №2" width="290"/>
+            <span class ="product-card__under-name">для нормальной кожи</span>
+            <h2 class ="product-card__product-name">Подарочный набор №2</h2>
+            <p>Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.</p>    
+            <span>Состав: </span>
+            <ul>
+                <li>воски</li>
+                <li>минералы</li>
+                <li>масла</li>
+            </ul>
+            <div class="product-card__price-row">
+                <b class="product-card__price">Цена</b>
+                <span class="product-card__number">7 520 ₽</span>
+            </div>
+            <button class="product-card__buy-button buy-button" type= "button">
+                <span class="buy-button__icon">+</span>
+                <span class="buy-button__text">Купить</span>
+            </button>
+        </li>
+
+    </ul>
+    
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <link rel ="stylesheet" href ="style.css">
 </head>
 
