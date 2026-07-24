@@ -62,10 +62,10 @@ function openYoutube() {
 
 //mouseover
 
-const mouseoverButton = document.getElementById('mouse-over');
+const productsTitle = document.getElementById('mouse-over');
 
-mouseoverButton.addEventListener('mouseover', () => {
-  console.log(mouseoverButton.textContent.trim())
+productsTitle.addEventListener('mouseover', () => {
+  console.log(productsTitle.textContent.trim())
 });
 
 
