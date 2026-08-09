@@ -1,35 +1,36 @@
 //#1
-const  cityTemp = (city, temperature) => {
-  console.log(`Сейчас в ${city} температура — ${temperature} градусов по Цельсию`)}
+const  getCityTemp = (city, temperature) => {
+  console.log(`Сейчас в ${city} температура — ${temperature} градусов по Цельсию`)
+}
 
-  cityTemp(`Moscow`, `35`);
+  getCityTemp(`Moscow`, `35`);
 
   //#2
 
 const lightSpeed = 299792458 ;
 
-const CheckSpeed = (speed) => {
-  if (speed > lightSpeed)
+const checkSpeed = (speed) => {
+  if (speed > lightSpeed) { 
     console.log('Сверхсветовая скорость')
-  else if (speed === lightSpeed)
+  } else if  (speed === lightSpeed) {
     console.log('Скорость света')
-  else
+  } else {
     console.log('Субсветовая скорость')
+  }
 }
-
-CheckSpeed(299792459);
+checkSpeed(299792459);
 
 //#3
 
-const productFirst = "коричневый стол";
-const priceProductFirst = 3500;
+const firstProduct = "коричневый стол";
+const priceFirstProduct = 3500;
 
 const buyProduct = (money) => {
-  if (money >= priceProductFirst ){
-     buyDifference = money - priceProductFirst;
+  if (money >= priceFirstProduct ){
+    const  buyDifference = money - priceFirstProduct;
     console.log(` ${productFirst} приобретен, спасибо за покупку!, ваша сдача ${buyDifference}$`)
   } else {
-    priceDifference = priceProductFirst - money;
+    const priceDifference = priceFirstProduct - money;
     console.log(`Вам не хватает ${priceDifference}$, пополните баланс`)
   }
 }
