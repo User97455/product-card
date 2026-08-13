@@ -2,7 +2,6 @@
 const  getCityTemp = (city, temperature) => {
   console.log(`Сейчас в ${city} температура — ${temperature} градусов по Цельсию`)
 }
-
   getCityTemp(`Moscow`, `35`);
 
   //#2
@@ -23,14 +22,14 @@ checkSpeed(299792459);
 //#3
 
 const firstProduct = "коричневый стол";
-const priceFirstProduct = 3500;
+const firstPriceProduct = 3500;
 
 const buyProduct = (money) => {
-  if (money >= priceFirstProduct ){
-    const  buyDifference = money - priceFirstProduct;
+  if (money >= firstPriceProduct ){
+    const  buyDifference = money - firstPriceProduct;
     console.log(` ${productFirst} приобретен, спасибо за покупку!, ваша сдача ${buyDifference}$`)
   } else {
-    const priceDifference = priceFirstProduct - money;
+    const priceDifference = firstPriceProduct - money;
     console.log(`Вам не хватает ${priceDifference}$, пополните баланс`)
   }
 }
