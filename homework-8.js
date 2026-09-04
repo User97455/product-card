@@ -23,11 +23,11 @@ const carInfo = {
 }
 // 4-oe задание
 
-ownerCar = userInfo;
+carInfo.owner = userInfo;
 
 // 5-oe задание
 
-function CheckCarSpeed(carInfo){
+function checkCarSpeed(carInfo){
   if (Object.hasOwn(carInfo, 'maxSpeed')) {
     console.log('свойство maxSpeed существует')
 } else {
@@ -35,13 +35,13 @@ function CheckCarSpeed(carInfo){
     console.log('свойство maxSpeed добавлено')
 }
 }
-CheckCarSpeed(carInfo);
+checkCarSpeed(carInfo);
 console.log(carInfo);
 
 //6-oe задание
 
-const logUserInfo =(userInfo, [property]) => {
-  console.log(` ${userInfo[property]} `);
+const logUserInfo =(userInfo, property) => {
+  console.log(` ${userInfo, property} `);
 };
 
 logUserInfo(userInfo, ['religion']);
@@ -79,6 +79,9 @@ const books = [
   }
 ]
 
+const newBooksList = books.push({title: 'Рай и Ад', author: 'Умар Сулейман Аль-Ашкар', year: '2013', genre: 'религия'})
+console.log(newBooksList);
+
 //9-ое задание
 
 const marvelVillains= [
@@ -108,6 +111,10 @@ const marvelVillains= [
   },
 ]
 
+const booksAndVillains = [...books, ...marvelVillains];
+console.log(booksAndVillains);
+
+
 // 10-ое задание
 
 const checkSizeDestruction = (marvelVillains) => {
@@ -115,9 +122,9 @@ const checkSizeDestruction = (marvelVillains) => {
   if (evil.sizeDestruction > 8 ){
     return evil.villain + (` высокая степень угрозы для общества `)
   }
-  else {
-    return evil.villain + (` низкая степень угрозы для общества `)
-  }
+    else {
+      return evil.villain + (` низкая степень угрозы для общества `)
+    }
 });
 }
 
