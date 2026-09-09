@@ -41,7 +41,7 @@ console.log(carInfo);
 //6-oe задание
 
 const logUserInfo =(userInfo, property) => {
-  console.log(` ${userInfo, property} `);
+  console.log(` ${userInfo, [property]} `);
 };
 
 logUserInfo(userInfo, ['religion']);
@@ -117,17 +117,11 @@ console.log(booksAndVillains);
 
 // 10-ое задание
 
-const checkSizeDestruction = (marvelVillains) => {
-  return marvelVillains.map(evil => {
-  if (evil.sizeDestruction > 8 ){
-    return evil.villain + (` высокая степень угрозы для общества `)
-  }
-    else {
-      return evil.villain + (` низкая степень угрозы для общества `)
-    }
+const checkSizeDestruction = marvelVillains.map((villain, i) => {
+  console.log(`${i}:` , villain);
+  const sizeDestruction = villain.sizeDestruction;
+  villain.isDangerous = sizeDestruction > 6;
+  return villain;
 });
-}
 
-const result = checkSizeDestruction(marvelVillains);
-console.log(result[0]);
-
+console.log(checkSizeDestruction);
