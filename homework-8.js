@@ -30,10 +30,10 @@ carInfo.owner = userInfo;
 function checkCarSpeed(carInfo){
   if (Object.hasOwn(carInfo, 'maxSpeed')) {
     console.log('свойство maxSpeed существует')
-} else {
+  } else {
     carInfo.maxSpeed = 250;
     console.log('свойство maxSpeed добавлено')
-}
+  }
 }
 checkCarSpeed(carInfo);
 console.log(carInfo);
@@ -41,10 +41,10 @@ console.log(carInfo);
 //6-oe задание
 
 const logUserInfo =(userInfo, property) => {
-  console.log(` ${userInfo, [property]} `);
+  console.log(` ${userInfo[property]} `);
 };
 
-logUserInfo(userInfo, ['religion']);
+logUserInfo(userInfo, 'religion');
 // 7-oe задание
 
 const itemsForSale = ['телефон', 'кассета', 'стол', 'зеркало', 'подставка']
@@ -117,11 +117,11 @@ console.log(booksAndVillains);
 
 // 10-ое задание
 
-const checkSizeDestruction = marvelVillains.map((villain, i) => {
-  console.log(`${i}:` , villain);
-  const sizeDestruction = villain.sizeDestruction;
-  villain.isDangerous = sizeDestruction > 6;
-  return villain;
+const checkSizeDestruction = marvelVillains.map((evil, i) => {
+  console.log(`${i}:` , evil);
+  const sizeDestruction = evil.sizeDestruction;
+  evil.isDangerous = sizeDestruction > 6;
+  return evil;
 });
 
 console.log(checkSizeDestruction);
