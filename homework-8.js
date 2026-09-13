@@ -41,7 +41,7 @@ console.log(carInfo);
 //6-oe задание
 
 const logUserInfo =(userInfo, property) => {
-  console.log(` ${userInfo[property]} `);
+  console.log(userInfo[property]);
 };
 
 logUserInfo(userInfo, 'religion');
