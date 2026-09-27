@@ -20,7 +20,7 @@ const cars = [
      changan : "uni-z",
   },
   {
-    lexus : "rx 350",
+    lexus : "lx 570",
   },
   {
     mercedes : "g63",
