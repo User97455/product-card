@@ -26,8 +26,8 @@ const firstPriceProduct = 3500;
 
 const buyProduct = (money) => {
   if (money >= firstPriceProduct ){
-    const  buyDifference = money - firstPriceProduct;
-    console.log(` ${productFirst} приобретен, спасибо за покупку!, ваша сдача ${buyDifference}$`)
+    const  getDifference = money - firstPriceProduct;
+    console.log(` ${firstProduct} приобретен, спасибо за покупку!, ваша сдача ${getDifference}$`)
   } else {
     const priceDifference = firstPriceProduct - money;
     console.log(`Вам не хватает ${priceDifference}$, пополните баланс`)
