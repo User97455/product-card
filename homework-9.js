@@ -11,19 +11,19 @@ console.log(newArrayNumbers);
 
 const cars = [
   {
-    toyota: "camry",
+    brand: 'toyota', model: 'camry',
   },
   {
-    tank : "300",
+    brand: 'tank', model: '300',
   },
   {
-     changan : "uni-z",
+    brand: 'changan', model: 'uni-z',
   },
   {
-    lexus : "lx 570",
+    brand:'lexus', model : 'lx 570',
   },
   {
-    mercedes : "g63",
+    brand:'mercedes', model : 'g63',
   },
 ]
 
@@ -56,21 +56,21 @@ console.log(commentsFromYoutube);
 
 // 9 quest
 
-const OnlyNameId = commentsFromYoutube.map (object => {
+const onlyNameId = commentsFromYoutube.map (object => {
   return{
-  id: object.id,
-  name: object.name
+    id: object.id,
+    name: object.name
   };
 });
 
-console.log(OnlyNameId);
+console.log(onlyNameId);
 
 
 // 10 quest
 
-const workingComments = commentsFromYoutube.map (symbol =>{
-  symbol.body.length > 180 ? symbol.isInvalid = true : symbol.isInvalid = false;
-  return symbol
+const workingComments = commentsFromYoutube.map (comment =>{
+  comment.isInvalid = comment.body.length > 180;
+  return comment
 });
 
 console.log(workingComments);
