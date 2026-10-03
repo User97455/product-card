@@ -27,7 +27,7 @@ const cars = [
   },
 ]
 
-const checkCar = cars.find(car => car.mercedes === "g63");
+const checkCar = cars.find(car => car.brand === "mercedes");
 
 console.log(checkCar);
 
@@ -69,10 +69,11 @@ console.log(onlyNameId);
 // 10 quest
 
 const workingComments = commentsFromYoutube.map (comment =>{
-  comment.isInvalid = comment.body.length > 180;
-  return comment
+  return {
+    ...comment,
+    isInvalid : comment.body.length > 180,
+  }; 
 });
-
 console.log(workingComments);
 
 //11 quest 
