@@ -1,0 +1,57 @@
+const productCards = [
+  {
+    underName: "для нормальной кожи",
+    productName: "Увлажняющая маска",
+    forWhat: "Способствует удерживанию влаги в верхних слоях кожи.",
+    price: "Цена:",
+    priceNumber: "3 500 ₽",
+    buyButton: "Купить",
+    buttonIcon: "+",
+    buttonText: "Купить",
+    compound: "Состав:",
+    elements: ["воски", "минералы", "масла"],
+  },
+  {
+    underName: "для нормальной кожи",
+    productName: "Гель для умывания",
+    forWhat: "Интенсивно очищает, не повреждает защитный барьер кожи.",
+    price: "Цена:",
+    priceNumber: "1 650 ₽",
+    buyButton: "Купить",
+    buttonIcon: "+",
+    buttonText: "Купить",
+    compound: "Состав:",
+    elements: [
+      "минералы",
+      "витамины С, А, РР, В и Е",
+      "солнцезащитные компоненты",
+    ],
+  },
+  {
+    underName: "для нормальной кожи",
+    productName: "Подарочный набор №1",
+    forWhat: "Набор, состоящий из увлажняющего крема и маски.",
+    price: "Цена:",
+    priceNumber: "4 750 ₽",
+    buyButton: "Купить",
+    buttonIcon: "+",
+    buttonText: "Купить",
+    compound: "Состав:",
+    elements: ["воски", "минералы", "масла"],
+  },
+  {
+    underName: "для нормальной кожи",
+    productName: "Подарочный набор №2",
+    forWhat:
+      "Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.",
+    price: "Цена:",
+    priceNumber: "7 520 ₽",
+    buyButton: "Купить",
+    buttonIcon: "+",
+    buttonText: "Купить",
+    compound: "Состав:",
+    elements: ["воски", "минералы", "масла"],
+  },
+];
+
+export { productCards };
