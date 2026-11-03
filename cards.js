@@ -1,0 +1,80 @@
+export const productCards = [
+  {
+    image: "images/photo-1.png",
+    underName: "для нормальной кожи",
+    productName: "Увлажняющий мусс",
+    forWhat: "увлажняют кожу лица, оставляя её мягкой и гладкой.",
+    compound: "Состав:",
+    elements: [
+      "активные натуральные комплексы",
+      "витамины С, А, РР, В И Е", 
+      "солнцезащитные компоненты"],
+    price: "Цена:",
+    priceNumber: "2 750 ₽",
+    buyButton: "Купить",
+    buttonIcon: "+",
+    buttonText: "Купить",
+  },
+  {
+    image: "images/photo-2x.png",
+    underName: "для нормальной кожи",
+    productName: "Увлажняющая маска",
+    forWhat: "Способствует удерживанию влаги в верхних слоях кожи.",
+    compound: "Состав:",
+    elements: ["воски", "минералы", "масла"],
+    price: "Цена:",
+    priceNumber: "3 500 ₽",
+    buyButton: "Купить",
+    buttonIcon: "+",
+    buttonText: "Купить",
+   
+  },
+  {
+    image: "images/photo-3.png",
+    underName: "для нормальной кожи",
+    productName: "Гель для умывания",
+    forWhat: "Интенсивно очищает, не повреждает защитный барьер кожи.",
+    compound: "Состав:",
+    elements: [
+      "минералы",
+      "витамины С, А, РР, В и Е",
+      "солнцезащитные компоненты",
+    ],
+    price: "Цена:",
+    priceNumber: "1 650 ₽",
+    buyButton: "Купить",
+    buttonIcon: "+",
+    buttonText: "Купить",
+  },
+  {
+    image: "images/photo-4.png",
+    underName: "для нормальной кожи",
+    productName: "Подарочный набор №1",
+    forWhat: "Набор, состоящий из увлажняющего крема и маски.",
+    compound: "Состав:",
+    elements: ["воски", "минералы", "масла"],
+    price: "Цена:",
+    priceNumber: "4 750 ₽",
+    buyButton: "Купить",
+    buttonIcon: "+",
+    buttonText: "Купить",
+  },
+  {
+    image: "images/photo-5.png",
+    underName: "для нормальной кожи",
+    productName: "Подарочный набор №2",
+    forWhat:
+      "Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.",
+    compound: "Состав:",
+    elements: ["воски", "минералы", "масла"],
+    price: "Цена:",
+    priceNumber: "7 520 ₽",
+    buyButton: "Купить",
+    buttonIcon: "+",
+    buttonText: "Купить",
+  },
+];
+
+
+
+
