@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Сайт по уходу за кожей</title>
   
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/title.css">
@@ -18,14 +18,6 @@
 <body>
     <main>
         <h1 class="title" id="mouse-over">Выбери свой продукт</h1>
-        <!-- <div class = 'actions'>
-            <button class='buy-button' id="color-all-rechanger">Изменить цвет всех карточек</button>
-            <button class='buy-button' id="color-one-rechanger">Изменить цвет первой карточки</button>
-            <button class='buy-button' id="open-google">Открыть страницу Google.com</button>
-            <button class='buy-button' id="output-console-log">Вывести сообщение в консоль log</button>
-            <button class='buy-button' id="open-youtube">Открыть страницу YouTube.com</button>
-            <button class='buy-button' id="more-color-button">Больше цветов</button>
-        </div> -->
         <ul class="products-list" id = 'cards-list'>
             <template id = 'cards-template'>
                 <li class="product-card"">
@@ -33,28 +25,25 @@
                     <span class="product-card__under-name"></span>
                     <h2 class="product-card__product-name"></h2>
                     <p class="product-card__for-what"></p>
-                    <span class="product-card__compound"></span>
+                    <span class="product-card__compound">Состав:</span>
                     <ul>
                         <li class="product-card__elements"></li>
                         <li class="product-card__elements"></li>
                         <li class="product-card__elements"></li>
                     </ul>
                     <div class="product-card__price-row">
-                        <b class="product-card__price"></b>
+                        <b class="product-card__price">Цена</b>
                         <span class="product-card__number"></span>
                     </div>
                     <button class="product-card__buy-button buy-button" type= "button">
-                        <span class="buy-button__icon"></span>
-                        <span class="buy-button__text"></span>
+                        <span class="buy-button__icon">+</span>
+                        <span class="buy-button__text">Купить</span>
                     </button>
                 </li>
             </template>
         </ul>
     
     </main>
-    <!--<script src="main.js"></script> -->
-    <!-- <script src="homework-8.js"></script>  -->
-    <!-- <script src="homework-9.js" type = module></script> -->
     <script src="homework-10.js" type = module></script>
     <script type = module src="cards.js"  ></script>
 </body>
