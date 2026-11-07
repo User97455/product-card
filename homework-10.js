@@ -12,7 +12,6 @@ const productsDescriptions = productCards.reduce((products,productCard) =>{
 
 console.log(productsDescriptions)
 
-
 // quest 5*. Реализовать функцию, которая при старте страницы выводит
 //  сообщение (через функцию prompt) "Сколько карточек отобразить? От 1 до 5" 
 //  и в зависимости от результата - будет выводить введенное количество.
@@ -34,26 +33,6 @@ const getCardsAmount = () =>{
 
 
 const cardsTemplate = document.getElementById('cards-template');
-const cardsList = document.getElementById('cards-list');
-
-productCards.forEach(product =>{
-  const cardClone = cardsTemplate.content.cloneNode(true);
-  cardClone.querySelector('.product-card__image').src = product.image;
-  cardClone.querySelector('.product-card__under-name').textContent = product.underName;
-  cardClone.querySelector('.product-card__product-name').textContent = product.productName;
-  cardClone.querySelector('.product-card__for-what').textContent = product.forWhat;
-  const elementsNodes = 
-  cardClone.querySelectorAll('.product-card__elements');
-  elementsNodes.forEach((node,index) =>{
-    if (product.elements[index]) {
-      node.textContent = product.elements[index];
-    }
-  });
-  cardClone.querySelector('.product-card__number').textContent = product.priceNumber;
-  cardsList.appendChild(cardClone)
-  console.log(cardsList);
-})
-
 
 const showCards = (productsToShow) =>{
   const cardsList = document.getElementById('cards-list');
@@ -71,7 +50,7 @@ const showCards = (productsToShow) =>{
       node.textContent = product.elements[index];
     }
   });
-  cardClone.querySelector('.product-card__number').textContent = product.priceNumber;
+  cardClone.querySelector('.product-card__number').textContent = product.price;
   cardsList.appendChild(cardClone)
   console.log(cardsList);
 });
@@ -82,6 +61,4 @@ if (amount) {
   const productsToRender = productCards.slice(0,amount);
   showCards(productsToRender);
 }
-
-// ww
 

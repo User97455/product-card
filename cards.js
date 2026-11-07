@@ -8,7 +8,7 @@ export const productCards = [
       "активные натуральные комплексы",
       "витамины С, А, РР, В И Е", 
       "солнцезащитные компоненты"],
-    priceNumber: "2 750 ₽",
+    price: "2 750 ₽",
   },
   {
     image: "images/photo-2x.png",
@@ -29,7 +29,7 @@ export const productCards = [
       "витамины С, А, РР, В и Е",
       "солнцезащитные компоненты",
     ],
-    priceNumber: "1 650 ₽",
+    price: "1 650 ₽",
   },
   {
     image: "images/photo-4.png",
@@ -37,7 +37,7 @@ export const productCards = [
     productName: "Подарочный набор №1",
     forWhat: "Набор, состоящий из увлажняющего крема и маски.",
     elements: ["воски", "минералы", "масла"],
-    priceNumber: "4 750 ₽",
+    price: "4 750 ₽",
   },
   {
     image: "images/photo-5.png",
@@ -46,7 +46,7 @@ export const productCards = [
     forWhat:
       "Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.",
     elements: ["воски", "минералы", "масла"],
-    priceNumber: "7 520 ₽",
+    price: "7 520 ₽",
   },
 ];
 
