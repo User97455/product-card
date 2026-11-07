@@ -2,12 +2,16 @@ import {productCards} from "./cards.js";
 //  quest 4 Используя метод .reduce(), получить массив объектов, 
 //  где ключем является название продукта, а значением - его описание
 
-const productDescription = productCards.reduce((cardsName,compound) =>{
-  cardsName[compound.productName] = compound.forWhat;
-  return cardsName;
-}, {});
+const productsDescriptions = productCards.reduce((products,productCard) =>{
+  const element = {
+    [productCard.productName]: productCard.forWhat
+  }
+  products.push(element)
+  return products;
+}, []);
 
-console.log(productDescription)
+console.log(productsDescriptions)
+
 
 // quest 5*. Реализовать функцию, которая при старте страницы выводит
 //  сообщение (через функцию prompt) "Сколько карточек отобразить? От 1 до 5" 
@@ -38,7 +42,6 @@ productCards.forEach(product =>{
   cardClone.querySelector('.product-card__under-name').textContent = product.underName;
   cardClone.querySelector('.product-card__product-name').textContent = product.productName;
   cardClone.querySelector('.product-card__for-what').textContent = product.forWhat;
-  cardClone.querySelector('.product-card__compound').textContent = product.compound
   const elementsNodes = 
   cardClone.querySelectorAll('.product-card__elements');
   elementsNodes.forEach((node,index) =>{
@@ -46,17 +49,14 @@ productCards.forEach(product =>{
       node.textContent = product.elements[index];
     }
   });
-  cardClone.querySelector('.product-card__price').textContent = product.price;
   cardClone.querySelector('.product-card__number').textContent = product.priceNumber;
-  cardClone.querySelector('.buy-button__icon').textContent = product.buttonIcon;
-  cardClone.querySelector('.buy-button__text').textContent = product.buttonText;
   cardsList.appendChild(cardClone)
   console.log(cardsList);
 })
 
 
 const showCards = (productsToShow) =>{
-  const cardsList = document.getElementById('cards-list')
+  const cardsList = document.getElementById('cards-list');
   cardsList.innerHTML ='';
   productsToShow.forEach(product =>{
   const cardClone = cardsTemplate.content.cloneNode(true);
@@ -64,7 +64,6 @@ const showCards = (productsToShow) =>{
   cardClone.querySelector('.product-card__under-name').textContent = product.underName;
   cardClone.querySelector('.product-card__product-name').textContent = product.productName;
   cardClone.querySelector('.product-card__for-what').textContent = product.forWhat;
-  cardClone.querySelector('.product-card__compound').textContent = product.compound
   const elementsNodes = 
   cardClone.querySelectorAll('.product-card__elements');
   elementsNodes.forEach((node,index) =>{
@@ -72,10 +71,7 @@ const showCards = (productsToShow) =>{
       node.textContent = product.elements[index];
     }
   });
-  cardClone.querySelector('.product-card__price').textContent = product.price;
   cardClone.querySelector('.product-card__number').textContent = product.priceNumber;
-  cardClone.querySelector('.buy-button__icon').textContent = product.buttonIcon;
-  cardClone.querySelector('.buy-button__text').textContent = product.buttonText;
   cardsList.appendChild(cardClone)
   console.log(cardsList);
 });
